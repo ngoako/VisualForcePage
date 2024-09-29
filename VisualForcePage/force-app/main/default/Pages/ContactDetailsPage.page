@@ -1,0 +1,22 @@
+<apex:page setup="true" controller="contactHelperVF">
+    <apex:sectionHeader></apex:sectionHeader>
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockButtons>
+
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem>Active Status:{!isActive}</apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>Contact Phone:{!contactPhone}</apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem>Contact Email:{!contactEmail}</apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>Contact Annual Revenue:{!contactRevenue}</apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem>Contact Firstname:{!contactFirstName}</apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>Contact Lastname:{!contactLastName}</apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -2,6 +2,11 @@
     <apex:sectionHeader title="Controllers" subtitle="Standard"></apex:sectionHeader>
     <apex:form>
         <apex:pageBlock>
+            <apex:pageBlockButtons location="Both">
+                <apex:commandButton value="Save" action="{!Save}"></apex:commandButton>
+                <apex:commandButton value="Save & New" action="{!Save}"></apex:commandButton>
+                <apex:commandButton value="Cancel" action="{!Cancel}"></apex:commandButton>
+            </apex:pageBlockButtons>
             <apex:pageBlockSection title="Account Information" columns="2" collapsible="true">
                 <apex:inputField value="{!Account.Name}"></apex:inputField>
                 <apex:inputField value="{!Account.AccountNumber}"></apex:inputField>
